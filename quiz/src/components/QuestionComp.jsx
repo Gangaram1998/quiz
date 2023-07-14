@@ -49,9 +49,8 @@ export const QuestionComp = ({ data: { q, word, options: { a: { word: optionA },
 
     return (
         <>
-            <Box border={"1px solid gray"} padding="10px 30px" textAlign="start" borderRadius="40px">
-                <Text fontSize="20px" fontWeight="600" color="gray.700">Q.{i + 1}  {q}?</Text>
-                <Text fontSize="20px" fontWeight="600" color="gray.700" marginLeft="50px">Word: {word}</Text>
+            <Box border={"1px solid gray"} padding="15px 30px" textAlign="start" borderRadius="40px">
+                <Text fontSize="20px" fontWeight="600" color="gray.700">Q.{i + 1}  {q}? Word: {word}</Text>
             </Box>
             <Grid fontSize="20px" fontWeight="600" color="gray.700" templateColumns={{ base: "repeat(1, 1fr)", md: "repeat(2, 1fr)" }} gap={10} marginTop="40px" >
                 <Box border="1px solid gray" borderRadius="20px" py="10px" bg={option === "a" ? "blue" : "none"} color={option === "a" ? "white" : "black"} onClick={show !== true ? () => setOption("a") : null}>a. {optionA}</Box>
